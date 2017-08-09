@@ -24,11 +24,12 @@ header{
      padding-bottom: 5px;
 }
 
-.main-container {
+#main-container {
    padding-top: 20px;
    display: flex;
     justify-content: center;
    align-items: center;
+   
 }
 
 
