@@ -1,0 +1,5 @@
+use bucket_list;
+
+db.countries.remove({});
+
+db.countries.insert({"name":"Bhutan","topLevelDomain":[".bt"],"alpha2Code":"BT","alpha3Code":"BTN","callingCodes":["975"],"capital":"Thimphu","altSpellings":["BT","Kingdom of Bhutan"],"region":"Asia","subregion":"Southern Asia","population":775620,"latlng":[27.5,90.5],"demonym":"Bhutanese","area":38394,"gini":38.1,"timezones":["UTC+06:00"],"borders":["CHN","IND"],"nativeName":"ʼbrug-yul","numericCode":"064","currencies":[{"code":"BTN","name":"Bhutanese ngultrum","symbol":"Nu."},{"code":"INR","name":"Indian rupee","symbol":"₹"}],"languages":[{"iso639_1":"dz","iso639_2":"dzo","name":"Dzongkha","nativeName":"རྫོང་ཁ"}],"translations":{"de":"Bhutan","es":"Bután","fr":"Bhoutan","ja":"ブータン","it":"Bhutan","br":"Butão","pt":"Butão"},"flag":"https://restcountries.eu/data/btn.svg","regionalBlocs":[{"acronym":"SAARC","name":"South Asian Association for Regional Cooperation","otherAcronyms":[],"otherNames":[]}]})
