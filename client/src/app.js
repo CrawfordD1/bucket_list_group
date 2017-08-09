@@ -28,7 +28,7 @@ var populateCountrySelector = function(countries){
   for(country of countries){
     var option = document.createElement('option');
     option.innerText = country.name;
-    option.value = country.name;
+    option.value = country;
     selector.appendChild(option);
   }
 }

@@ -12,4 +12,12 @@ bucketRouter.get('/', function(req, res) {
   });
 });
 
+bucketRouter.post('/', function(req, res) {
+  var country = req.body;
+  query.add(country, function(results){
+    res.redirect('/');
+  })
+});
+
+
 module.exports = bucketRouter;
