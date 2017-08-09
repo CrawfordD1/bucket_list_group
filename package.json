@@ -15,5 +15,13 @@
   "bugs": {
     "url": "https://github.com/CrawfordD1/bucket_list_group/issues"
   },
-  "homepage": "https://github.com/CrawfordD1/bucket_list_group#readme"
+  "homepage": "https://github.com/CrawfordD1/bucket_list_group#readme",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "express": "^4.15.4",
+    "mongodb": "^2.2.31"
+  },
+  "devDependencies": {
+    "webpack": "^3.5.1"
+  }
 }
