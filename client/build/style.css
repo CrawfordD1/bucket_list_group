@@ -6,7 +6,7 @@ body {
 
 
 
-  #flags{
+ #flags {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -47,17 +47,17 @@ header{
 }
 
 ul {
-   display: flex;
+   display: inline-flex;
    justify-content: space-between;
-
    list-style-type: none;
    padding-bottom: 25px;
-   
    font-size: 1.5em;
 }
 
+
+
 img {
-   display: flex;
+   display: inline-flex;
    justify-content: center;
    width: 150px;
    height: 100px;
