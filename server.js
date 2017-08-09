@@ -7,12 +7,10 @@ app.use(parser.json());
 app.use(parser.urlencoded({extended: true}));
 app.use(express.static('client/build'));
 
-// app.use(require("./controllers/index"));
+app.use(require('./controllers/index'));
 
- app.get('/', function(req, res){
-  res.sendFile(__dirname + '/client/build/index.html');
+app.use(express.static('client/build'));
+
+app.listen(3000, function () {
+  console.log('App running on port '+this.address().port);
 });
-
- app.listen(3000, function(){
-   console.log("Listening on port 3000");
- });
