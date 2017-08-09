@@ -14,7 +14,7 @@ body {
   }
 
 header{
-   opacity: 0.9;
+
    color: firebrick;
      font-weight: bold;
      font-size: 2em;
@@ -38,6 +38,30 @@ header{
    justify-content: center;
    font-family: 'Patrick Hand', cursive;
    font-size: 1.2 em;
+}
+
+#countries {
+   display: flex;
+   flex-wrap: wrap;
+   padding-top: 50px;
+}
+
+ul {
+   display: flex;
+   justify-content: space-between;
+
+   list-style-type: none;
+   padding-bottom: 25px;
+   
+   font-size: 1.5em;
+}
+
+img {
+   display: flex;
+   justify-content: center;
+   width: 150px;
+   height: 100px;
+   border: 2px solid black;
 }
 
 
