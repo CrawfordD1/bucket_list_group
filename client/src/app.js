@@ -25,15 +25,12 @@ var requestComplete = function(){
 
 var populateCountrySelector = function(countries){
   var selector = document.getElementById("country-selection");
-
   for(country of countries){
     var option = document.createElement('option');
-     option.innerText = country.name;
-     option.value = country.name;
+    option.innerText = country.name;
+    option.value = country.name;
     selector.appendChild(option);
   }
 }
-
-
 
 window.addEventListener('load', init);
