@@ -19,6 +19,7 @@ UI.prototype = {
       var zoom = 10;
       var mainMap = new MapWrapper(mapDiv, center, zoom);
 
+      img.classList.add("resultFlags");
       img.src = country.flag;
       li.innerText = country.name;
       li.appendChild(mapDiv);
