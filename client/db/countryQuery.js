@@ -5,7 +5,7 @@ var BucketQuery = function(){
 };
 
 
-TeamQuery.prototype = {
+BucketQuery.prototype = {
   all: function(callback){
     MongoClient.connect(this.url, function(err, db){
       var collection = db.collection('countries');
