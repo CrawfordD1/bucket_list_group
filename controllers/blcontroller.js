@@ -14,9 +14,11 @@ bucketRouter.get('/', function(req, res) {
 
 bucketRouter.post('/', function(req, res) {
   var country = req.body;
-  query.add(country, function(results){
-    res.redirect('/');
+  query.add(country, function(err, results){
+    if(err){return console.log(err)};
+    
   })
+
 });
 
 

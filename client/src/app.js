@@ -14,6 +14,7 @@ var init = function(){
     return false;
   });
 
+
   var countryselect = document.getElementById("country-selection");
   countryselect.addEventListener('change', function(){
 
@@ -22,7 +23,6 @@ var init = function(){
       var url = "http://localhost:3000/bucketlist";
       var method = "POST";
       var postData = this.value;
-  // var postData = JSON.parse(this.value);
 
   var async = true;
 
