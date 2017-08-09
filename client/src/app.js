@@ -9,16 +9,15 @@ var init = function(){
   var countries = []
   getCountriesFromAPI(url);
 
+  document.getElementById('country-selection').onchange = (function() {
+    document.getElementsByTagName('audio')[0].play();
+    return false;
+    });
+
   var countryselect = document.getElementById("country-selection");
   countryselect.addEventListener('change', function(){
 
     if(this.value !== "none"){
-
-      document.getElementById('country-selection').onchange = (function() {
-        document.getElementsByTagName('audio')[0].play();
-        return false;
-      });
-
 
       var url = "http://localhost:3000/bucketlist";
       var method = "POST";
