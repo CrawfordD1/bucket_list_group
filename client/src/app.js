@@ -2,9 +2,10 @@ var init = function(){
 
 var url = "https://restcountries.eu/rest/v2/all"
 var countries = []
-getCountriesFromAPI();
+getCountriesFromAPI(url);
+}
 
-var getCountriesFromAPI = function(){
+var getCountriesFromAPI = function(url){
   makeRequest(url, requestComplete);
 }
 
@@ -27,12 +28,12 @@ var populateCountrySelector = function(countries){
 
   for(country of countries){
     var option = document.createElement('option');
-    var option.innerText = country.name;
-    var option.value = country.name.;
+     option.innerText = country.name;
+     option.value = country.name;
     selector.appendChild(option);
   }
 }
-}
+
 
 
 window.addEventListener('load', init);
